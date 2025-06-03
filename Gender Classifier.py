@@ -16,7 +16,8 @@ Y = ['male', 'male', 'female', 'female', 'female', 'male', 'female', 'male', 'ma
 models = [tree.DecisionTreeClassifier(), RandomForestClassifier(), MLPClassifier(), SVC()]
 for clf in models: 
     clf.fit(X,Y)
-    prediction = clf.predict([[150, 90, 43], [150,50,20]])
+    prediction = clf.predict([[180, 90, 43], [150,50,20], [175, 78, 45]])
     print(prediction)
 
+print('Best model: SVC')
 
